@@ -1,0 +1,7 @@
+django==2.2.8
+datetime
+djangorestframework
+psycopg2-binary==2.8.3
+cx_Oracle
+requests
+django_filters
