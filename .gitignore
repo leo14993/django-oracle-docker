@@ -1,3 +1,7 @@
 venv
-!.vscode/extensions.json
-.vscode/*
+*__pycache__
+api/core/migrations/*
+.vscode/
+.vscode/settings.json
+
+

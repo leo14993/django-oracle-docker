@@ -1,7 +1,10 @@
-django
 datetime
+django
 djangorestframework
-psycopg2-binary==2.8.3
-cx_Oracle
 requests
-django_filters
+parmap==1.5.2
+schedule
+redis
+cx_Oracle
+python-dotenv==0.14.0
+pandas
