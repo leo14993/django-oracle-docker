@@ -1,4 +1,4 @@
-# Backend para o projeto Permutadores
+# Backend de API Django REST com Conexão a banco de dados Oracle
 
 
 ## Pré-requisitos
