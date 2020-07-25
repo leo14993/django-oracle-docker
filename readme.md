@@ -33,10 +33,10 @@ Sistema Operacional: Windows 10
 Criar container:
 
 *python:3.7-slim*
-`docker build --no-cache --build-arg ENV=dev  --build-arg PORT=8000  --build-arg HOST=0.0.0.0  --build-arg SERVER_API_HOST=api-myproject.com.br  --build-arg DEBUG=FALSE  --build-arg SECRET_KEY=my_secretkey_123456789_django_Leonardo  --build-arg ALLOWED_HOSTS = ['127.0.0.1','api-myproject.com.br']  --build-arg DATABASE_ENGINE=django.db.backends.oracle  --build-arg DATABASE_NAME=Oracle_db_Name  --build-arg DATABASE_HOST=Oracle_host  --build-arg DATABASE_USER=Oracle_user  --build-arg DATABASE_PASSWORD=Oracle_password  --build-arg DATABASE_PORT=1521  --build-arg SERVICE_NAME=ORCL  --build-arg REDIS_CACHE_HOST=127.0.0.1  --build-arg REDIS_CACHE_PORT=6379  --build-arg REDIS_CACHE_DB=0  --build-arg REDIS_CACHE_PASSWORD=Your2020Redis  --build-arg IMG=python:3.7-slim  --build-arg STAGE='dev' -t permutadores -f Dockerfile .`
+`docker build --no-cache --build-arg ENV=dev  --build-arg PORT=8000  --build-arg HOST=0.0.0.0  --build-arg SERVER_API_HOST=api-myproject.com.br  --build-arg DEBUG=FALSE  --build-arg SECRET_KEY=my_secretkey_123456789_django_Leonardo  --build-arg ALLOWED_HOSTS = ['127.0.0.1','api-myproject.com.br']  --build-arg DATABASE_ENGINE=django.db.backends.oracle  --build-arg DATABASE_NAME=Oracle_db_Name  --build-arg DATABASE_HOST=Oracle_host  --build-arg DATABASE_USER=Oracle_user  --build-arg DATABASE_PASSWORD=Oracle_password  --build-arg DATABASE_PORT=1521  --build-arg SERVICE_NAME=ORCL  --build-arg REDIS_CACHE_HOST=127.0.0.1  --build-arg REDIS_CACHE_PORT=6379  --build-arg REDIS_CACHE_DB=0  --build-arg REDIS_CACHE_PASSWORD=Your2020Redis  --build-arg IMG=python:3.7-slim  --build-arg STAGE='dev' -t myproject -f Dockerfile .`
 
 *alpine:3.11*
-`docker build --no-cache --build-arg ENV=dev  --build-arg PORT=8000  --build-arg HOST=0.0.0.0  --build-arg SERVER_API_HOST=api-myproject.com.br  --build-arg DEBUG=FALSE  --build-arg SECRET_KEY=my_secretkey_123456789_django_Leonardo  --build-arg ALLOWED_HOSTS = ['127.0.0.1','api-myproject.com.br']  --build-arg DATABASE_ENGINE=django.db.backends.oracle  --build-arg DATABASE_NAME=Oracle_db_Name  --build-arg DATABASE_HOST=Oracle_host  --build-arg DATABASE_USER=Oracle_user  --build-arg DATABASE_PASSWORD=Oracle_password  --build-arg DATABASE_PORT=1521  --build-arg SERVICE_NAME=ORCL  --build-arg REDIS_CACHE_HOST=127.0.0.1  --build-arg REDIS_CACHE_PORT=6379  --build-arg REDIS_CACHE_DB=0  --build-arg REDIS_CACHE_PASSWORD=Your2020Redis  --build-arg IMG=python:alpine:3.11  --build-arg STAGE='dev' -t permutadores -f alpine.Dockerfile .`
+`docker build --no-cache --build-arg ENV=dev  --build-arg PORT=8000  --build-arg HOST=0.0.0.0  --build-arg SERVER_API_HOST=api-myproject.com.br  --build-arg DEBUG=FALSE  --build-arg SECRET_KEY=my_secretkey_123456789_django_Leonardo  --build-arg ALLOWED_HOSTS = ['127.0.0.1','api-myproject.com.br']  --build-arg DATABASE_ENGINE=django.db.backends.oracle  --build-arg DATABASE_NAME=Oracle_db_Name  --build-arg DATABASE_HOST=Oracle_host  --build-arg DATABASE_USER=Oracle_user  --build-arg DATABASE_PASSWORD=Oracle_password  --build-arg DATABASE_PORT=1521  --build-arg SERVICE_NAME=ORCL  --build-arg REDIS_CACHE_HOST=127.0.0.1  --build-arg REDIS_CACHE_PORT=6379  --build-arg REDIS_CACHE_DB=0  --build-arg REDIS_CACHE_PASSWORD=Your2020Redis  --build-arg IMG=python:alpine:3.11  --build-arg STAGE='dev' -t myproject -f alpine.Dockerfile .`
 
 
 
@@ -44,7 +44,7 @@ Criar container:
 Excecutar container:
 
 `docker run -v <Source-path>:<container-path> -p <EXTERNAL-port>:<EXPOSE-port> <nome_do_container>`
-`ex: docker run -v /c/DATABASE/:/app/base -p 8000:8000 permutadores-backend-python  `
+`ex: docker run -v /c/DATABASE/:/app/base -p 8000:8000 myproject-backend-python  `
 
 #### Python
 

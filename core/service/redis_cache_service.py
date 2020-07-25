@@ -9,8 +9,7 @@ class RedisCacheService:
             host=host,
             port=port,
             db=db,
-            password=password
-            
+            password=password      
         )
 
     def set(self, key, value, serialization=False):
