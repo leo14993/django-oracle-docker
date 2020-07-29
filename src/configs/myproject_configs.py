@@ -33,7 +33,6 @@ class Configs:
         self.REDIS_CACHE_PASSWORD=os.getenv('REDIS_CACHE_PASSWORD')
         self.PI_WEB_API_USER=os.getenv('PI_WEB_API_USER')
         self.PI_WEB_API_PASSWORD= os.getenv('PI_WEB_API_PASSWORD')
-
         self.PI_WEB_API_B64_USER_PASSWORD = base64.b64encode(bytes(f"{self.PI_WEB_API_USER}:{self.PI_WEB_API_PASSWORD}", 'utf-8')).decode("utf-8")   
         self.PI_WEB_API_AUTH_HEADERS =  {"Content-Type": "application/json; charset=UTF-8"
                                         ,"X-Requested-With":"worked"

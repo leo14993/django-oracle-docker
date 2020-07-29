@@ -12,9 +12,6 @@ import requests
 from src.configs.myproject_configs import redirect
 
 
-
-
-
 def run_threaded(job_func):
     """
     Metodo que retorna o status de conexão com uma URL 

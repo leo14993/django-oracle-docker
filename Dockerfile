@@ -1,11 +1,7 @@
-# ARG IMG=nexus.petrobras.com.br:5000/library/python:3.7
 ARG IMG=${IMG}
-# python:3.7
 FROM ${IMG}
-# FROM python:3.8.3-slim
-# FROM python:3.9-rc-buster
 
-LABEL MAINTAINER "Leonardo Rodrigues <leonardo.rodrigues@spassu.com>"
+LABEL MAINTAINER "Leonardo Rodrigues <leonardo.rodrigues@hotmail.com>"
 
 COPY . /app
 WORKDIR /app
@@ -93,17 +89,6 @@ useradd python
 ENV LD_LIBRARY_PATH="/usr/lib/oracle/19.5/client(64)/lib/${LD_LIBRARY_PATH:+:$LD_LIBRARY_PATH}"
 ENV ORACLE_HOME="/usr/lib/oracle/19.5/client(64)"
 ENV PATH="/usr/lib/oracle/19.5/;"+${PATH}
-
-
-
-# install all the specific requirements for a state
-# RUN sh requirements.sh ${STAGE}
-
-# RUN apt-get update -y && \
-# apt-get install gcc g++ -y
-# RUN pip install --upgrade pip &&  pip install -r requirements.txt 
-# RUN  pip install --force-reinstall --no-cache -r requirements_ML.txt 
-# RUN apt-get remove gcc g++ -y 
 
 
 COPY --chown=python . /app

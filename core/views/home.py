@@ -15,7 +15,7 @@ class HomeView(ListAPIView):
         ,"Endpoints Gerenciais":"CRUD dos dados (Create,Read,Update,Delete)"
         ,"my_project":f"{redirect.MY_PROJECT} | Método GET | Consulta os dados disponiveis no banco da tabela my_project"
         ,"create_my_project":f"{redirect.CREATE_PROJECT} | Método POST | Cria dados no banco da tabela my_project"
-        ,"update_my_project":f"{redirect.UPDATE_MY_PROJECT} | Método PUT/PATCH DELETE | Edita/Deleta dados disponiveis no banco da tabela my_project "
+        ,"update_my_project":f"{redirect.UPDATE_MY_PROJECT}/ | Método PUT/PATCH DELETE | Edita/Deleta dados disponiveis no banco da tabela my_project "
         
         }
 
